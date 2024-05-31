@@ -4,7 +4,7 @@ import javafx.fxml.FXML;
 import javafx.scene.control.TextField;
 
 public class HelloController {
-    private int v1; //Numero 1
+    private double v1; //Numero 1
     private String operation = ""; //Operazione da eseguire
     private int inseriti=0;
     @FXML
@@ -64,6 +64,10 @@ public class HelloController {
         riqId.appendText("00");
     }
     @FXML
+    protected void onCaselePuntos() {
+        riqId.appendText(".");
+    }
+    @FXML
     protected void cAll() {
         riqId.setText("");
         v1 = 0;
@@ -80,9 +84,9 @@ public class HelloController {
     @FXML
     protected void onPiu() {
         if (inseriti==0)
-            v1=Integer.parseInt(riqId.getText());
+            v1=Double.parseDouble(riqId.getText());
         else
-            v1=v1+Integer.parseInt(riqId.getText());
+            v1=v1+Double.parseDouble(riqId.getText());
         riqId.setText("");
         operation="+";
         inseriti++;
@@ -90,9 +94,9 @@ public class HelloController {
     @FXML
     protected void onMeno() {
         if (inseriti==0)
-            v1=Integer.parseInt(riqId.getText());
+            v1=Double.parseDouble(riqId.getText());
         else
-            v1 =v1-Integer.parseInt(riqId.getText());
+            v1 =v1-Double.parseDouble(riqId.getText());
         riqId.setText("");
         operation = "-";
         inseriti++;
@@ -101,9 +105,9 @@ public class HelloController {
     @FXML
     protected void onPer() {
         if (inseriti==0)
-            v1=Integer.parseInt(riqId.getText());
+            v1=Double.parseDouble(riqId.getText());
         else
-            v1 =v1*Integer.parseInt(riqId.getText());
+            v1 =v1*Double.parseDouble(riqId.getText());
         riqId.setText("");
         operation = "*";
         inseriti++;
@@ -112,15 +116,15 @@ public class HelloController {
     @FXML
     protected void onDiviso() {
         if (inseriti==0)
-            v1=Integer.parseInt(riqId.getText());
+            v1=Double.parseDouble(riqId.getText());
         else{
-            if (v1==0 && Integer.parseInt(riqId.getText())==0) {
+            if (v1==0 && Double.parseDouble(riqId.getText())==0) {
                 riqId.setText("Indeterminato");
             }
-            else if (Integer.parseInt(riqId.getText()) == 0) {
+            else if (Double.parseDouble(riqId.getText()) == 0) {
                 riqId.setText("Impossibile");
             } else {
-                v1 =v1/Integer.parseInt(riqId.getText());
+                v1 =v1/Double.parseDouble(riqId.getText());
             }
         }
         riqId.setText("");
@@ -129,8 +133,8 @@ public class HelloController {
     }
     @FXML
     protected void onUguale() {
-        int v2 = Integer.parseInt(riqId.getText());
-        int result;
+        double v2 = Double.parseDouble(riqId.getText());
+        double result;
         switch (operation) {
             case "+":
                 result = v1 + v2;
