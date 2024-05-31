@@ -23,7 +23,7 @@
             <Font name="JetBrains Mono ExtraBold Italic" size="29.0" />
          </font></Label>
         <VBox alignment="BOTTOM_LEFT" prefHeight="235.0" prefWidth="470.0" scaleShape="false" GridPane.columnIndex="1" GridPane.rowIndex="1">
-           <TextField fx:id="riqId" alignment="BOTTOM_LEFT" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="153.0" prefWidth="462.0" promptText="Inserire valori" style="-fx-background-color: #FFFFFF; -fx-background-radius: 35px; -fx-text-fill: #000000; -fx-font-weight: 900; -fx-font-size: 50; ">
+           <TextField fx:id="riqId" alignment="BOTTOM_LEFT" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="153.0" prefWidth="462.0" promptText="Inserire Valori" style="-fx-background-color: #FFFFFF; -fx-background-radius: 35px; -fx-text-fill: #000000; -fx-font-weight: 900; -fx-font-size: 50; ">
                <font>
                    <Font name="JetBrains Mono SemiBold" size="46.0" />
                </font>
@@ -93,26 +93,32 @@
                <font>
                   <Font name="JetBrains Mono ExtraBold" size="23.0" />
                </font></Button>
-                <Button fx:id="n7" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#onCasele7" prefHeight="70.0" prefWidth="100.0" style="-fx-background-color: #FFFFFF; -fx-background-radius: 35px; -fx-text-fill: #000000; -fx-font-weight: 900; " text="7" GridPane.rowIndex="2">
+                <Button maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#onCasele7" prefHeight="70.0" prefWidth="100.0" style="-fx-background-color: #FFFFFF; -fx-background-radius: 35px; -fx-text-fill: #000000; -fx-font-weight: 900; " text="7" GridPane.rowIndex="2">
                <font>
                   <Font name="JetBrains Mono ExtraBold" size="23.0" />
                </font></Button>
-                <Button fx:id="n8" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#onCasele8" prefHeight="70.0" prefWidth="100.0" style="-fx-background-color: #FFFFFF; -fx-background-radius: 35px; -fx-text-fill: #000000; -fx-font-weight: 900; " text="8" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                <Button maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#onCasele8" prefHeight="70.0" prefWidth="100.0" style="-fx-background-color: #FFFFFF; -fx-background-radius: 35px; -fx-text-fill: #000000; -fx-font-weight: 900; " text="8" GridPane.columnIndex="1" GridPane.rowIndex="2">
                <font>
                   <Font name="JetBrains Mono ExtraBold" size="23.0" />
                </font></Button>
-                <Button fx:id="n00" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#onCasele00" prefHeight="70.0" prefWidth="100.0" style="-fx-background-color: #FFFFFF; -fx-background-radius: 35px; -fx-text-fill: #000000; -fx-font-weight: 900; " text="00" GridPane.columnIndex="1" GridPane.rowIndex="3">
+                <Button maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#onCasele00" prefHeight="70.0" prefWidth="100.0" style="-fx-background-color: #FFFFFF; -fx-background-radius: 35px; -fx-text-fill: #000000; -fx-font-weight: 900; " text="00" GridPane.columnIndex="1" GridPane.rowIndex="3">
                <font>
                   <Font name="JetBrains Mono ExtraBold" size="23.0" />
                </font></Button>
-                <Button fx:id="n9" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#onCasele9" prefHeight="70.0" prefWidth="100.0" style="-fx-background-color: #FFFFFF; -fx-background-radius: 35px; -fx-text-fill: #000000; -fx-font-weight: 900; " text="9" GridPane.columnIndex="2" GridPane.rowIndex="2">
+                <Button maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#onCasele9" prefHeight="70.0" prefWidth="100.0" style="-fx-background-color: #FFFFFF; -fx-background-radius: 35px; -fx-text-fill: #000000; -fx-font-weight: 900; " text="9" GridPane.columnIndex="2" GridPane.rowIndex="2">
                <font>
                   <Font name="JetBrains Mono ExtraBold" size="23.0" />
                </font></Button>
-                <Button fx:id="n0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#onCasele0" prefHeight="70.0" prefWidth="100.0" style="-fx-background-color: #FFFFFF; -fx-background-radius: 35px; -fx-text-fill: #000000; -fx-font-weight: 900; " text="0" GridPane.rowIndex="3">
+                <Button maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#onCasele0" prefHeight="70.0" prefWidth="100.0" style="-fx-background-color: #FFFFFF; -fx-background-radius: 35px; -fx-text-fill: #000000; -fx-font-weight: 900; " text="0" GridPane.rowIndex="3">
                <font>
                   <Font name="JetBrains Mono ExtraBold" size="23.0" />
-               </font></Button>
+               </font>
+                </Button>
+                <Button maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#onCaselePuntos" prefHeight="70.0" prefWidth="100.0" style="-fx-background-color: #FFFFFF; -fx-background-radius: 35px; -fx-text-fill: #000000; -fx-font-weight: 900; " text="." GridPane.columnIndex="2" GridPane.rowIndex="3">
+                    <font>
+                        <Font name="JetBrains Mono ExtraBold" size="23.0" />
+                    </font>
+                </Button>
             </children>
         </GridPane>
         <Pane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="3" GridPane.rowIndex="2">
