@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.calcolatrice20.HelloController">
+    <columnConstraints>
+        <ColumnConstraints hgrow="SOMETIMES" maxWidth="300.0" minWidth="10.0" prefWidth="17.399998092651373" />
+        <ColumnConstraints hgrow="SOMETIMES" maxWidth="382.0" minWidth="10.0" prefWidth="306.0" />
+        <ColumnConstraints hgrow="SOMETIMES" maxWidth="346.0" minWidth="10.0" prefWidth="172.0" />
+    </columnConstraints>
+    <rowConstraints>
+        <RowConstraints />
+        <RowConstraints maxHeight="140.0" minHeight="0.0" prefHeight="140.0" vgrow="SOMETIMES" />
+        <RowConstraints maxHeight="292.8" minHeight="10.0" prefHeight="166.0" vgrow="SOMETIMES" />
+        <RowConstraints maxHeight="345.0" minHeight="10.0" prefHeight="273.0" vgrow="SOMETIMES" />
+    </rowConstraints>
+    <children>
+        <Label prefHeight="18.0" prefWidth="191.0" text="Calcolatrice" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+        <TextField fx:id="riqId" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="44.0" prefWidth="290.0" promptText="Inserire Valori" text="0" GridPane.columnIndex="1" GridPane.rowIndex="2">
+            <font>
+                <Font name="LiSu" size="20.0" />
+            </font>
+        </TextField>
+        <VBox alignment="BOTTOM_LEFT" prefHeight="211.0" prefWidth="106.0" scaleShape="false" GridPane.columnIndex="2" GridPane.rowIndex="2">
+            <Button fx:id="piuBottom" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onMouseClicked="#onPiu" prefHeight="36.0" prefWidth="100.0" text="+" />
+            <Button fx:id="menoBottom" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#onMeno" prefHeight="36.0" prefWidth="100.0" text="-" />
+            <Button fx:id="perBottom" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#onPer" prefHeight="36.0" prefWidth="100.0" text="x" />
+            <Button fx:id="divisoBottom" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#onDiviso" prefHeight="36.0" prefWidth="100.0" text="/" />
+        </VBox>
+        <GridPane GridPane.columnIndex="1" GridPane.rowIndex="3">
+            <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            </columnConstraints>
+            <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            </rowConstraints>
+            <children>
+                <Button fx:id="n1" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#onCasele1" prefHeight="70.0" prefWidth="100.0" text="1" />
+                <Button fx:id="n2" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#onCasele2" prefHeight="70.0" prefWidth="100.0" text="2" GridPane.columnIndex="1" />
+                <Button fx:id="n3" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#onCasele3" prefHeight="70.0" prefWidth="100.0" text="3" GridPane.columnIndex="2" />
+                <Button fx:id="n4" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#onCasele4" prefHeight="70.0" prefWidth="100.0" text="4" GridPane.rowIndex="1" />
+                <Button fx:id="n5" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#onCasele5" prefHeight="70.0" prefWidth="100.0" text="5" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                <Button fx:id="n6" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#onCasele6" prefHeight="70.0" prefWidth="100.0" text="6" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+                <Button fx:id="n7" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#onCasele7" prefHeight="70.0" prefWidth="100.0" text="7" GridPane.rowIndex="2" />
+                <Button fx:id="n8" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#onCasele8" prefHeight="70.0" prefWidth="100.0" text="8" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                <Button fx:id="n00" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#onCasele00" prefHeight="70.0" prefWidth="100.0" text="00" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                <Button fx:id="n9" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#onCasele9" prefHeight="70.0" prefWidth="100.0" text="9" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+                <Button fx:id="n0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#onCasele0" prefHeight="70.0" prefWidth="100.0" text="0" GridPane.rowIndex="3" />
+            </children>
+        </GridPane>
+      <Pane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="3">
+         <children>
+            <Button mnemonicParsing="false" onAction="#c" prefHeight="70.0" prefWidth="100.0" text="C" translateY="70.0" />
+            <Button mnemonicParsing="false" onAction="#cAll" prefHeight="70.0" prefWidth="100.0" text="CE" />
+         </children>
+      </Pane>
+    </children>
+    <padding>
+        <Insets bottom="6.0" left="6.0" right="6.0" top="6.0" />
+    </padding>
+</GridPane>
